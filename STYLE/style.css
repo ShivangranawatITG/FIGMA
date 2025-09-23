@@ -1,0 +1,586 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #EAF3F8;
+}
+
+@font-face {
+    font-family: DIN Next CYR;
+    src: url(/DINNextCYR-Regular/DINNextCYR-Regular.ttf);
+}
+
+.page_width {
+    max-width: 1560px;
+    margin: auto;
+}
+
+.announcement_bar {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 16px 0px;
+}
+
+.announcement_bar p {
+    font-family: DIN Next CYR;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #28282A;
+}
+
+.header_main {
+    display: flex;
+    width: 1470px;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #28282A;
+}
+
+.header_wrapper {
+    position: absolute;
+    top: 72px;
+    left: 89px;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+}
+
+ul li a {
+    font-family: DIN Next CYR;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    color: #3D3D3F;
+}
+
+.header_icon {
+    display: flex;
+    gap: 15px;
+}
+
+.image_wrapper {
+    opacity: 1;
+    position: relative;
+    border-width: 1px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #28282A;
+}
+
+.text_wrapper {
+    width: 510px;
+    height: 200px;
+    top: 279px;
+    left: 125px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    opacity: 1;
+    border: 1px solid #28282A;
+    background-color: #FFFFFF;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 40px;
+}
+
+.header_icon svg {
+    cursor: pointer;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    color: #28282A;
+    gap: 5px;
+}
+
+.paragraph p {
+    font-family: DIN Next CYR;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    color: #3D3D3F;
+}
+
+.text1 {
+    font-family: Maven Pro;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+}
+
+.info {
+    font-family: Century Gothic;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48.83px;
+}
+
+.primary_button {
+    opacity: 1;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 16px 36px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #367BF6;
+    border: none;
+    color: #FFFFFF;
+    font-family: DIN Next CYR;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.primary_button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px black;
+}
+
+.secondary_button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px black;
+}
+
+.secondary_button {
+    border: 1px solid #28282A;
+    display: flex;
+    gap: 10px;
+    transition: 0.3s;
+    align-items: center;
+    opacity: 1;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 16px 36px;
+    background-color: #FFFFFF;
+    font-family: DIN Next CYR;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    color: #28282A;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.slider1 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    top: 374.5px;
+    left: 1560px;
+}
+
+.slider2 {
+    position: absolute;
+    top: 777px;
+    left: 1560px;
+}
+
+.big_deals {
+    margin-top: 15px;
+    background-color: #FFFFFF;
+    border: 1px solid #28282A;
+    display: flex;
+    gap: 196px;
+    align-items: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 40px;
+}
+
+.deals {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.deals h3 {
+    font-family: Century Gothic;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 31.25px;
+    color: #28282A;
+}
+
+.deals p {
+    font-family: DIN Next CYR;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+}
+
+.time {
+    display: flex;
+    gap: 20px;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.timer h3 {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    background-color: #EAF3F8;
+    color: #28282A;
+    font-family: Century Gothic;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.timer p {
+    font-family: Maven Pro;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    text-align: center;
+}
+
+.product_wrapper {
+    margin-top: 80px;
+}
+
+.product_heading {
+    font-family: Century Gothic;
+    font-weight: 700;
+    font-style: Bold;
+    color: #28282A;
+    font-size: 31.25px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #28282A;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+    gap: 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px;
+}
+
+.products_information {
+    display: flex;
+}
+
+.product_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.products:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 25px black;
+}
+
+.product_name {
+    font-family: Maven Pro;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.product_title {
+    font-family: DIN Next CYR;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    color: #000000;
+}
+
+.product_price {
+    display: flex;
+    gap: 10px;
+}
+
+.original {
+    font-family: DIN Next CYR;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    color: #E44C44;
+}
+
+.fake {
+    font-family: DIN Next CYR;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #3D3D3F;
+}
+
+.product_rating {
+    display: flex;
+    gap: 8px;
+}
+
+.products_information {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.padding {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form_wrapper {
+    margin-top: 80px;
+}
+
+.form_outer {
+    border: 1px solid #28282A;
+    background-color: #FFFFFF;
+    padding: 40px 277px;
+    width: 793px;
+    margin-left: 105px;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.form_inner {
+    width: 788px;
+    padding: 40px 38px;
+    border: 1px solid #0000001A;
+    border-radius: 20px;
+}
+
+form h3 {
+    font-family: Century Gothic;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 31.25px;
+    color: #28282A;
+}
+
+#bu {
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form_arrange {
+    display: flex;
+    gap: 12px;
+}
+
+.width {
+    width: 350px;
+}
+
+.width2 {
+    width: 750px;
+}
+
+input {
+    padding: 16px 18px;
+    border: 1px solid #28282A;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+label,
+.form_gap p {
+    font-family: DIN Next CYR;
+    color: #3D3D3F;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+}
+
+.form_gap {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+button {
+    cursor: pointer;
+}
+
+.width3 {
+    width: 750px;
+    height: 50px;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.submit {
+    padding: 16px 36px;
+    background-color: #367BF6;
+    font-family: DIN Next CYR;
+    border: none;
+    font-weight: 700;
+    font-style: Bold;
+    color: #FFFFFF;
+}
+
+.footer_wrapper {
+    margin-top: 80px;
+}
+
+.footer1 {
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.footer1 h3 {
+    color: #28282A;
+    font-family: Century Gothic;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 31.25px;
+}
+
+.footer1 p {
+    font-family: DIN Next CYR;
+    font-weight: 400;
+    font-style: Regular;
+    color: #3D3D3F;
+}
+
+.manage {
+    display: flex;
+    gap: 20px;
+}
+
+#contact {
+    width: 250px;
+}
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer2 {
+    display: flex;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    justify-content: space-between;
+    padding: 80px 40px;
+}
+
+.footer_arrange h3 {
+    font-family: Century Gothic;
+    color: #28282A;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 25px;
+}
+
+.footer_arrange p {
+    font-family: DIN Next CYR;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    color: #535355;
+}
+
+.footer_arrange {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social_media {
+    display: flex;
+    gap: 20px;
+}
+
+.footer3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #CCCCCC;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+
+.payment {
+    display: flex;
+    gap: 40px;
+}
+
+.copyright {
+    font-family: DIN Next CYR;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    color: #535355;
+}
