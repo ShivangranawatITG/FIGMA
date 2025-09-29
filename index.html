@@ -13,24 +13,26 @@
 
 <body>
     <div class="announcement_bar_wrapper">
-        <div class="page_width">
-            <div class="announcement_bar">
-                <p>⚡️ Free Shipping On All Orders Over $100</p>
-                <p>⚡️ Free Shipping On All Orders Over $100</p>
-                <p>⚡️ Free Shipping On All Orders Over $100</p>
-                <p>⚡️ Free Shipping On All Orders Over $100</p>
-                <p>⚡️ Free Shipping On All Orders Over $100</p>
-            </div>
-        </div>
+        <marquee>
+            <div class="page_width">
+                <div class="announcement_bar">
+                    <p>⚡️ Free Shipping On All Orders Over $100</p>
+                    <p>⚡️ Free Shipping On All Orders Over $100</p>
+                    <p>⚡️ Free Shipping On All Orders Over $100</p>
+                    <p>⚡️ Free Shipping On All Orders Over $100</p>
+                    <p>⚡️ Free Shipping On All Orders Over $100</p>
+                </div>
+        </marquee>
+    </div>
     </div>
     <section>
         <div class="image_with_text_wrapper">
-            <div class="page_width">
-                <div class="image_wrapper">
+            <div class="page_width image_wrapper">
+                <div class="image">
                     <img src="/media/img.png" width="100%" alt="riding">
                 </div>
-                <header>
-                    <nav class="header_wrapper">
+                <header class="header_wrapper">
+                    <nav>
                         <div class="header_main">
                             <div class="logo"><a href="#"><svg width="100" height="25" viewBox="0 0 100 25" fill="none"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -431,81 +433,83 @@
         <div class="form_wrapper">
             <div class="page_width">
                 <div class="form_outer">
-                    <div class="form_inner">
-                        <form action="#">
+                    <div class="form-wrapper">
+                        <h3>Basic Information</h3>
+                        <form id="basicInfoForm" novalidate>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="firstName">First Name<span style="color:red;">*</span></label>
+                                    <input type="text" id="firstName" name="firstName" />
+                                    <div class="error" id="firstNameError"></div>
+                                </div>
+                                <div class="col">
+                                    <label for="lastName">Last Name<span style="color:red;">*</span></label>
+                                    <input type="text" id="lastName" name="lastName" />
+                                    <div class="error" id="lastNameError"></div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <label for="email">Email Address<span style="color:red;">*</span></label>
+                                <input type="email" id="email" name="email" />
+                                <div class="error" id="emailError"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="phone">Phone Number<span style="color:red;">*</span></label>
+                                    <input type="number" id="phone" name="phone" />
+                                    <div class="error" id="phoneError"></div>
+                                </div>
+                                <div class="col">
+                                    <label for="dob">Date of Birth</label>
+                                    <input type="date" id="dob" name="dob" />
+                                    <div class="error" id="dobError"></div>
+                                </div>
+                            </div>
+
                             <div>
-                                <h3>Basic Information</h3>
+                                <label>Gender<span style="color:red;">*</span></label>
+                                <div class="gender-options">
+                                    <label><input type="radio" name="gender" value="Male" /> Male</label>
+                                    <label><input type="radio" name="gender" value="Female" /> Female</label>
+                                    <label><input type="radio" name="gender" value="Other" /> Other</label>
+                                </div>
+                                <div class="error" id="genderError"></div>
                             </div>
-                            <div class="form_gap">
-                                <div class="form_arrange">
-                                    <div>
-                                        <label for="first">First Name*</label><br>
-                                        <input type="text" name="First Name" class="width" id="first">
-                                    </div>
-                                    <div>
-                                        <label for="last">Last Name*</label><br>
-                                        <input type="text" class="width" name="Last Name" id="last">
-                                    </div>
-                                </div>
-                                <div>
-                                    <label for="mail">Email Address*</label><br>
-                                    <input type="email" class="width2" name="Email Address" id="mail">
-                                </div>
-                                <div class="form_arrange">
-                                    <div>
-                                        <label for="number">Phone Number*</label><br>
-                                        <input type="number" class="width" name="Phone Number" id="number">
-                                    </div>
-                                    <div>
-                                        <label for="dob">DOB</label><br>
-                                        <input type="date" class="width" name="DOB" id="dob">
-                                    </div>
-                                </div>
-                                <p>Gender*</p>
-                                <div>
-                                    <input type="radio" name="gender" id="male">
-                                    <label for="male">Male</label>
-                                    <input type="radio" name="gender" id="female">
-                                    <label for="female">Female</label>
-                                    <input type="radio" name="gender" id="other">
-                                    <label for="other">Other</label>
-                                </div>
-                                <p>Hobbies</p>
-                                <div>
-                                    <input type="checkbox" name="hobbie" id="cricket">
-                                    <label for="cricket">Playing Cricket</label>
-                                    <input type="checkbox" name="movi" id="movie">
-                                    <label for="movie">Watching TV</label>
-                                    <input type="checkbox" name="reading" id="book">
-                                    <label for="book">Reading Books</label>
-                                    <input type="checkbox" name="ride" id="bike">
-                                    <label for="bike">Riding Bike</label>
-                                    <input type="checkbox" name="other" id="other">
-                                    <label for="other">Other</label>
-                                </div>
-                                <div>
-                                    <label for="message">Message*</label>
-                                    <input type="text" placeholder="ENTER YOUR MESSAGE HERE" class="width3"
-                                        id="message">
-                                </div>
-                                <div class="newsletter">
-                                    <div>
-                                        <input type="checkbox" name="letter" id="news">
-                                        <label for="news">Subscribe to Newsletter</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" name="condition" id="term">
-                                        <label for="term">Agree to Terms & Conditions</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" name="offers" id="offer">
-                                        <label for="offer">Receive Promotional Offers</label>
-                                    </div>
-                                    <div>
-                                        <input id="bu" class="submit" type="submit">
-                                    </div>
+
+                            <div>
+                                <label>Hobbies</label>
+                                <div class="hobbies-options">
+                                    <label><input type="checkbox" name="hobbies" value="Playing Cricket" /> Playing
+                                        Cricket</label>
+                                    <label><input type="checkbox" name="hobbies" value="Watching TV" /> Watching
+                                        TV</label>
+                                    <label><input type="checkbox" name="hobbies" value="Reading Books" /> Reading
+                                        Books</label>
+                                    <label><input type="checkbox" name="hobbies" value="Riding Bike" /> Riding
+                                        Bike</label>
+                                    <label><input type="checkbox" name="hobbies" value="Other" /> Other</label>
                                 </div>
                             </div>
+
+                            <div class="col" style="margin-top: 20px;">
+                                <label for="message">Message<span style="color:red;">*</span></label>
+                                <input type="text" id="message" name="message" placeholder="Enter your message here" />
+                                <div class="error" id="messageError"></div>
+                            </div>
+
+                            <div class="newsletter-options" style="margin-top: 20px;">
+                                <label><input type="checkbox" id="newsletter" name="newsletter" /> Subscribe to
+                                    Newsletter</label>
+                                <label><input type="checkbox" id="offers" name="offers" /> Receive Promotional
+                                    Offers</label>
+                                <label><input type="checkbox" id="terms" name="terms" /> Agree to Terms &
+                                    Conditions<span style="color:red;">*</span></label>
+                            </div>
+                            <div class="error" id="termsError" style="margin-top: 4px;"></div>
+
+                            <button type="submit" class="submit-btn primary_button">Submit</button>
                         </form>
                     </div>
                 </div>
