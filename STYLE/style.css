@@ -11,12 +11,13 @@ body {
 
 @font-face {
     font-family: DIN Next CYR;
-    src: url('./DINNextCYR-Regular/DINNextCYR-Regular.ttf');
+    src: url(./fonts/DINNextCyr-Regular.woff) format("woff"),
+         url(./fonts/DINNextCyr-Regular.ttf) format("truetype");
 }
 
 .page_width {
     max-width: 1560px;
-    margin: auto;
+    margin: auto; 
 }
 
 .announcement_bar {
