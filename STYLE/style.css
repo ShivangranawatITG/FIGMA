@@ -11,8 +11,7 @@ body {
 
 @font-face {
     font-family: DIN Next CYR;
-    src: url(./fonts/DINNextCyr-Regular.woff) format("woff"),
-         url(./fonts/DINNextCyr-Regular.ttf) format("truetype");
+    src: url(/DINNextCYR-Regular/DINNextCYR-Regular.ttf);
 }
 
 .page_width {
