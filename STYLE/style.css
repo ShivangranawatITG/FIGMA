@@ -477,6 +477,7 @@ input[type="checkbox"] {
 
 .error {
     color: red;
+    font-family: cursive;
     font-size: 14px;
     margin-top: 4px;
     min-height: 18px;
@@ -648,60 +649,6 @@ button {
     font-style: Regular;
     font-size: 14px;
     color: #535355;
-}
-
-
-@media (max-width: 1024px) {
-    .page_width {
-        max-width: 95%;
-        margin: auto;
-    }
-
-    .header_main {
-        width: 100%;
-        padding: 0px 15px;
-    }
-
-    .text_wrapper {
-        width: 400px;
-        left: 40px;
-        padding: 30px;
-    }
-
-    .info {
-        font-size: 36px;
-    }
-
-    .big_deals {
-        gap: 100px;
-        padding: 30px;
-    }
-
-    .products_information {
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
-    .products {
-        flex: 0 0 calc(50% - 20px);
-    }
-
-    .form_outer {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 30px 50px;
-    }
-
-    .footer2 {
-        flex-wrap: wrap;
-        gap: 40px;
-        padding: 60px 30px;
-    }
-
-    .footer_arrange {
-        flex: 0 0 calc(50% - 20px);
-    }
 }
 
 @media (max-width: 768px) {
