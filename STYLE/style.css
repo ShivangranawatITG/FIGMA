@@ -9,14 +9,14 @@ body {
     background-color: #EAF3F8;
 }
 
-@font-face {
+/* @font-face {
     font-family: DIN Next CYR;
-    src: url(./DINNextCYR-Regular/DINNextCYR-Regular.ttf);
-}
+    src: url('/DINNextCYR-Regular/DINNextCYR-Regular.ttf');
+} */
 
 .page_width {
     max-width: 1560px;
-    margin: auto; 
+    margin: auto;
 }
 
 .announcement_bar {
@@ -27,7 +27,7 @@ body {
 }
 
 .announcement_bar p {
-    font-family: DIN Next CYR;
+    font-family: "DINNextCYR-Regular";
     font-weight: 400;
     font-style: Regular;
     font-size: 14px;
@@ -62,7 +62,7 @@ ul {
 }
 
 ul li a {
-    font-family: DIN Next CYR;
+    font-family: "DINNextCYR-Regular";
     font-weight: 700;
     font-style: Bold;
     font-size: 16px;
@@ -116,7 +116,7 @@ ul li a {
 }
 
 .paragraph p {
-    font-family: DIN Next CYR;
+    font-family: "DINNextCYR-Regular";
     font-weight: 400;
     font-style: Regular;
     font-size: 16px;
@@ -150,7 +150,7 @@ ul li a {
     background-color: #367BF6;
     border: none;
     color: #FFFFFF;
-    font-family: DIN Next CYR;
+    font-family: "DINNextCYR-Regular";
     font-weight: 700;
     font-style: Bold;
     font-size: 16px;
@@ -180,7 +180,7 @@ ul li a {
     border-bottom-left-radius: 5px;
     padding: 16px 36px;
     background-color: #FFFFFF;
-    font-family: DIN Next CYR;
+    font-family: "DINNextCYR-Regular";
     font-weight: 700;
     font-style: Bold;
     font-size: 16px;
@@ -236,7 +236,7 @@ ul li a {
 }
 
 .deals p {
-    font-family: DIN Next CYR;
+    font-family: "DINNextCYR-Regular";
     font-weight: 400;
     font-style: Regular;
     font-size: 16px;
@@ -340,7 +340,7 @@ ul li a {
 }
 
 .product_title {
-    font-family: DIN Next CYR;
+    font-family: "DINNextCYR-Regular";
     font-weight: 700;
     font-style: Bold;
     font-size: 16px;
@@ -353,7 +353,7 @@ ul li a {
 }
 
 .original {
-    font-family: DIN Next CYR;
+    font-family: "DINNextCYR-Regular";
     font-weight: 400;
     font-style: Regular;
     font-size: 16px;
@@ -361,7 +361,7 @@ ul li a {
 }
 
 .fake {
-    font-family: DIN Next CYR;
+    font-family: "DINNextCYR-Regular";
     font-weight: 400;
     font-style: Regular;
     font-size: 16px;
@@ -527,7 +527,7 @@ input {
 
 label,
 .form_gap p {
-    font-family: DIN Next CYR;
+    font-family: "DINNextCYR-Regular";
     color: #3D3D3F;
     font-weight: 700;
     font-style: Bold;
@@ -570,7 +570,7 @@ button {
 }
 
 .footer1 p {
-    font-family: DIN Next CYR;
+    font-family: "DINNextCYR-Regular";
     font-weight: 400;
     font-style: Regular;
     color: #3D3D3F;
@@ -608,7 +608,7 @@ button {
 }
 
 .footer_arrange p {
-    font-family: DIN Next CYR;
+    font-family: "DINNextCYR-Regular";
     font-weight: 400;
     font-style: Regular;
     font-size: 14px;
@@ -644,65 +644,11 @@ button {
 }
 
 .copyright {
-    font-family: DIN Next CYR;
+    font-family: "DINNextCYR-Regular";
     font-weight: 400;
     font-style: Regular;
     font-size: 14px;
     color: #535355;
-}
-
-
-@media (max-width: 1024px) {
-    .page_width {
-        max-width: 95%;
-        margin: auto;
-    }
-
-    .header_main {
-        width: 100%;
-        padding: 0px 15px;
-    }
-
-    .text_wrapper {
-        width: 400px;
-        left: 40px;
-        padding: 30px;
-    }
-
-    .info {
-        font-size: 36px;
-    }
-
-    .big_deals {
-        gap: 100px;
-        padding: 30px;
-    }
-
-    .products_information {
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
-    .products {
-        flex: 0 0 calc(50% - 20px);
-    }
-
-    .form_outer {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 30px 50px;
-    }
-
-    .footer2 {
-        flex-wrap: wrap;
-        gap: 40px;
-        padding: 60px 30px;
-    }
-
-    .footer_arrange {
-        flex: 0 0 calc(50% - 20px);
-    }
 }
 
 @media (max-width: 768px) {
